@@ -44,7 +44,7 @@ Participants' data can be imported using a **CSV file**.
   <img src="https://i.imgur.com/jOB4Neo.png" alt="Mobile Screenshot 1" width="150"/>
   <img src="https://i.imgur.com/gJAkMQR.png" alt="Mobile Screenshot 2" width="150"/>
   <img src="https://i.imgur.com/I4Ts29q.png" alt="Mobile Screenshot 3" width="150"/>
-  <img src="https://1.imgur.com/yaKdnll.png" alt="Mobile Screenshot 4" width="250"/>
+  <img src="https://1.imgur.com/yaKdnll.png" alt="Mobile Screenshot 4" width="150"/>
 </p>
 
 ---

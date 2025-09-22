@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 export default function ScratchResult({ result }: { result: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [revealed, setRevealed] = useState(false);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -40,6 +41,7 @@ export default function ScratchResult({ result }: { result: string }) {
 
     const startDraw = (e: MouseEvent | TouchEvent) => {
       isDrawing = true;
+      setStarted(true);
       scratch(e);
     };
 
@@ -65,7 +67,7 @@ export default function ScratchResult({ result }: { result: string }) {
         if (pixels[i] < 128) transparentPixels++;
       }
       const percent = (transparentPixels / (pixels.length / 4)) * 100;
-      if (percent >= 60) {  // ✅ ubah ke 60%
+      if (percent >= 40) {
         setRevealed(true);
       }
     };
@@ -90,29 +92,38 @@ export default function ScratchResult({ result }: { result: string }) {
 
   return (
     <div className="flex flex-col items-center">
-      {/* Scratch Box */}
       <div className="relative w-[300px] h-[100px] mx-auto">
         <div className="absolute inset-0 flex items-center justify-center text-lg md:text-xl font-bold pointer-events-none">
           {result}
         </div>
-        <canvas ref={canvasRef} className="absolute inset-0 cursor-pointer z-10 rounded-lg shadow-md" />
+
+        {!started && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+            <span className="text-gray-700 font-semibold animate-pulse bg-white/70 px-2 rounded">
+              Gosokkan dulu le
+            </span>
+          </div>
+        )}
+
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 cursor-pointer z-10 rounded-lg shadow-md"
+        />
       </div>
 
-      {/* Result Image */}
-{revealed && (
-  <div className="mt-4 w-[300px] mx-auto">
-    <img
-      src={
-        result.toLowerCase() === "lulus"
-          ? "https://i.imgur.com/zNpXOl1.png"
-          : "https://i.imgur.com/MFFffQw.png"
-      }
-      alt={result}
-      className="w-full h-auto object-contain rounded-lg shadow-md"
-    />
-  </div>
-)}
-
+      {revealed && (
+        <div className="mt-4 w-[300px] mx-auto">
+          <img
+            src={
+              result.toLowerCase() === "lulus"
+                ? "https://i.imgur.com/zNpXOl1.png"
+                : "https://i.imgur.com/MFFffQw.png"
+            }
+            alt={result}
+            className="w-full h-auto object-contain rounded-lg shadow-md"
+          />
+        </div>
+      )}
     </div>
   );
 }

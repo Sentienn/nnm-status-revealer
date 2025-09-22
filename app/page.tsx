@@ -57,7 +57,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center px-4 bg-white text-gray-900">
       <div className="w-full max-w-xl flex flex-col items-center text-center">
         <img
-          src="https://via.placeholder.com/200x80.png?text=NNM+Logo"
+          src="https://i.imgur.com/sG7OgyT.png"
           alt="Nihon no Matsuri Logo"
           className="w-48 sm:w-56 mb-6"
         />

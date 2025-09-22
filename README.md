@@ -29,6 +29,26 @@ Participants' data can be imported using a **CSV file**.
 
 ---
 
+## 📸 Showcase
+
+### 🔹 Desktop
+<p align="center">
+  <img src="https://i.imgur.com/GMS6RnE.png" alt="Desktop Screenshot 1" width="250"/>
+  <img src="https://i.imgur.com/uh33t2z.png" alt="Desktop Screenshot 2" width="250"/>
+  <img src="https://i.imgur.com/nNnRIoU.png" alt="Desktop Screenshot 3" width="250"/>
+  <img src="https://i.imgur.com/xRyxknT.png" alt="Desktop Screenshot 4" width="250"/>
+</p>
+
+### 🔹 Mobile
+<p align="center">
+  <img src="https://i.imgur.com/jOB4Neo.png" alt="Mobile Screenshot 1" width="150"/>
+  <img src="https://i.imgur.com/gJAkMQR.png" alt="Mobile Screenshot 2" width="150"/>
+  <img src="https://i.imgur.com/I4Ts29q.png" alt="Mobile Screenshot 3" width="150"/>
+  <img src="https://1.imgur.com/yaKdnll.png" alt="Mobile Screenshot 4" width="250"/>
+</p>
+
+---
+
 ## 📌 Notes
 - This project is still **in development**.  
 - Future improvements may include better UI/UX.  

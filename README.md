@@ -30,3 +30,5 @@ Clone this repository:
 ```bash
 git clone https://github.com/Sentienn/nnm-status-revealer.git
 cd nnm-status-revealer
+
+🌐 Live Demo

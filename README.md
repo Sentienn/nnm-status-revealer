@@ -10,7 +10,7 @@ Participants' data can be imported using a **CSV file**.
 
 ## 🚀 Features
 - Upload participant data via **CSV**.
-- Fast search by name or ID.
+- Fast search by NIM (ID).
 - Display participants' pass/fail status.
 - Clean and simple user interface.
 
@@ -24,11 +24,12 @@ Participants' data can be imported using a **CSV file**.
 
 ---
 
-## 📦 Getting Started (Local Development)
+## 🌐 Live Demo
+👉 [nnm-status-revealer.vercel.app](https://nnm-status-revealer.vercel.app/)
 
-Clone this repository:
-```bash
-git clone https://github.com/Sentienn/nnm-status-revealer.git
-cd nnm-status-revealer
+---
 
-🌐 Live Demo
+## 📌 Notes
+- This project is still **in development**.  
+- Future improvements may include better UI/UX, enhanced CSV validation, and search optimization.  
+- Contributions, suggestions, and feedback are **very welcome**.  

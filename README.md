@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://nnm-status-revealer.vercel.app/)  
 
-A simple web application to **search and check NNM participants who passed**.  
+A simple web application to **search and check Nihon no Matsuri participants who passed**.  
 Participants' data can be imported using a **CSV file**.  
 ⚠️ This project is still in **development**.
 

@@ -1,4 +1,3 @@
-Timestamp,NIM,Kelamin,Status
-20/09/2025 21:36:42,10302212345,L,Lulus
-20/09/2025 21:36:54,1030229876,P,Tidak Lulus
-20/09/2025 21:37:02,10302222222,P,Lulus
+Timestamp,NIM,Kelamin,Nama,Status
+22/09/2025 21:27:19,103022123,L,Ahmad,Lulus
+22/09/2025 21:27:31,1030321,P,Cena,Tidak Lulus

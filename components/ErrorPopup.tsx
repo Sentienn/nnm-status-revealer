@@ -24,7 +24,7 @@ export default function ErrorPopup({ onClose }: ErrorPopupProps) {
         </p>
         <button
           onClick={onClose}
-          className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-base font-semibold"
+          className="bg-[#BB001D] hover:bg-red-700 text-white px-8 py-3 rounded-full text-base font-semibold"
         >
           Coba lagi
         </button>

@@ -26,7 +26,7 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
       </p>
       <button
         onClick={onBack}
-        className="bg-red-600 hover:bg-red-700 text-white px-10 py-3 rounded-full text-base font-semibold"
+        className="bg-[#BB001D] hover:bg-red-700 text-white px-10 py-3 rounded-full text-base font-semibold"
       >
         Kembali
       </button>

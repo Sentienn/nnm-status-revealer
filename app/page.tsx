@@ -55,35 +55,47 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-4 bg-white text-gray-900">
-      <div className="w-full max-w-xl flex flex-col items-center text-center">
-        <img
-          src="https://i.imgur.com/sG7OgyT.png"
-          alt="Nihon no Matsuri Logo"
-          className="w-48 sm:w-56 mb-6"
-        />
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+      <div className="w-full max-w-2xl flex flex-col items-center text-center">
+        
+        {/* LOGO */}
+        <div className="flex items-center justify-center mb-6">
+          <img
+            src="https://i.imgur.com/sG7OgyT.png"
+            alt="Nihon no Matsuri Logo"
+            className="w-56 sm:w-72"
+          />
+        </div>
+
+        {/* TITLE */}
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
           Pengumuman Hasil Tes
         </h1>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-8">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-8">
           Calon Anggota Baru NNM 17
         </h2>
-        <div className="w-full flex flex-col sm:flex-row items-center gap-3 p-3 rounded-full bg-white">
-          <input
-            type="text"
-            placeholder="Masukkan NIM"
-            value={nim}
-            onChange={(e) => setNim(e.target.value)}
-            className="flex-1 bg-[#F5FAFD] border border-gray-300 rounded-full pl-4 pr-3 py-3 
-                       text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600
-                       placeholder-gray-500"
-          />
-          <button
-            onClick={handleSearch}
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full 
-                       text-sm sm:text-base font-semibold w-full sm:w-auto"
-          >
-            Cek Hasil
-          </button>
+
+        {/* INPUT + BUTTON */}
+        <div className="w-full flex flex-col sm:flex-row items-center gap-3">
+          <div className="w-full">
+            <input
+              type="text"
+              placeholder="Masukkan NIM"
+              value={nim}
+              onChange={(e) => setNim(e.target.value)}
+              className="w-full bg-[#F5FAFD] border border-gray-300 rounded-full pl-4 pr-3 py-3 
+                         text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600
+                         placeholder-gray-500"
+            />
+          </div>
+          <div className="w-full sm:w-auto">
+            <button
+              onClick={handleSearch}
+              className="w-full bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full 
+                         text-sm sm:text-base font-semibold"
+            >
+              Cek Hasil
+            </button>
+          </div>
         </div>
       </div>
       {showError && <ErrorPopup onClose={() => setShowError(false)} />}

@@ -10,7 +10,7 @@ Participants' data can be imported using a **CSV file**.
 
 ## 🚀 Features
 - Upload participant data via **CSV**.
-- Fast search by NIM (ID).
+- Fast search by **NIM (ID)** (configurable to other fields).
 - Display participants' pass/fail status.
 - Clean and simple user interface.
 
@@ -31,5 +31,5 @@ Participants' data can be imported using a **CSV file**.
 
 ## 📌 Notes
 - This project is still **in development**.  
-- Future improvements may include better UI/UX, enhanced CSV validation, and search optimization.  
+- Future improvements may include better UI/UX.  
 - Contributions, suggestions, and feedback are **very welcome**.  

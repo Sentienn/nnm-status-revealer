@@ -67,12 +67,21 @@ export default function Home() {
         </div>
 
         {/* TITLE */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
-          Pengumuman Hasil Tes
-        </h1>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-8">
-          Calon Anggota Baru NNM 17
-        </h2>
+        {/* TITLE */}
+<div className="mb-8 text-center">
+  {/* Mobile: 2 baris kecil */}
+  <h1 className="block sm:hidden text-lg font-bold leading-snug">
+    Pengumuman Hasil Tes <br />
+    Calon Anggota Baru NNM 17
+  </h1>
+
+  {/* Desktop: 2 baris besar */}
+  <h1 className="hidden sm:block text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
+    Pengumuman Hasil Tes <br />
+    Calon Anggota Baru NNM 17
+  </h1>
+</div>
+
 
         {/* INPUT + BUTTON */}
         <div className="w-full flex flex-col sm:flex-row gap-3">
@@ -87,7 +96,7 @@ export default function Home() {
           />
           <button
             onClick={handleSearch}
-            className="bg-red-600 hover:bg-red-700 text-white rounded-full 
+            className="bg-[#BB001D] hover:bg-red-700 text-white rounded-full 
                        px-6 py-3 text-sm sm:text-base font-semibold
                        w-full sm:w-auto flex items-center justify-center"
           >

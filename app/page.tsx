@@ -75,27 +75,24 @@ export default function Home() {
         </h2>
 
         {/* INPUT + BUTTON */}
-        <div className="w-full flex flex-col sm:flex-row items-center gap-3">
-          <div className="w-full">
-            <input
-              type="text"
-              placeholder="Masukkan NIM"
-              value={nim}
-              onChange={(e) => setNim(e.target.value)}
-              className="w-full bg-[#F5FAFD] border border-gray-300 rounded-full pl-4 pr-3 py-3 
-                         text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600
-                         placeholder-gray-500"
-            />
-          </div>
-          <div className="w-full sm:w-auto">
-            <button
-              onClick={handleSearch}
-              className="w-full bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full 
-                         text-sm sm:text-base font-semibold"
-            >
-              Cek Hasil
-            </button>
-          </div>
+        <div className="w-full flex flex-col sm:flex-row gap-3">
+          <input
+            type="text"
+            placeholder="Masukkan NIM"
+            value={nim}
+            onChange={(e) => setNim(e.target.value)}
+            className="flex-1 bg-[#F5FAFD] border border-gray-300 rounded-full pl-4 pr-3 py-3 
+                       text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600
+                       placeholder-gray-500"
+          />
+          <button
+            onClick={handleSearch}
+            className="bg-red-600 hover:bg-red-700 text-white rounded-full 
+                       px-6 py-3 text-sm sm:text-base font-semibold
+                       w-full sm:w-auto flex items-center justify-center"
+          >
+            Cek Hasil
+          </button>
         </div>
       </div>
       {showError && <ErrorPopup onClose={() => setShowError(false)} />}

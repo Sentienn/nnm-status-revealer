@@ -13,7 +13,7 @@ interface Entry {
 
 export default function Home() {
   const [data, setData] = useState<Entry[]>([]);
-  const [nim, setNim] = useState("");
+  const [query, setQuery] = useState(""); // sekarang bisa NIM / Nama
   const [result, setResult] = useState<Entry | null>(null);
   const [showError, setShowError] = useState(false);
 
@@ -32,7 +32,14 @@ export default function Home() {
   }, []);
 
   const handleSearch = () => {
-    const found = data.find((d) => d.NIM === nim.trim());
+    const input = query.trim().toLowerCase();
+
+    const found = data.find(
+      (d) =>
+        d.NIM.toLowerCase() === input ||
+        d.Nama.toLowerCase() === input
+    );
+
     if (found) {
       setResult(found);
       setShowError(false);
@@ -60,35 +67,34 @@ export default function Home() {
         {/* LOGO */}
         <div className="flex items-center justify-center mb-6">
           <img
-            src="https://ik.imagekit.io/senttt/logo eo.png"
+            src="https://ik.imagekit.io/senttt/logo%20eo.png"
             alt="Nihon no Matsuri Logo"
             className="w-56 sm:w-72"
           />
         </div>
 
         {/* TITLE */}
-<div className="mb-8 text-center">
-  {/* Mobile: 2 baris kecil */}
-  <h1 className="block sm:hidden text-lg font-bold leading-snug">
-    Pengumuman Hasil Tes <br />
-    Calon Anggota Baru NNM 17
-  </h1>
+        <div className="mb-8 text-center">
+          {/* Mobile */}
+          <h1 className="block sm:hidden text-lg font-bold leading-snug">
+            Pengumuman Hasil Tes <br />
+            Calon Anggota Baru NNM 17
+          </h1>
 
-  {/* Desktop: 2 baris besar */}
-  <h1 className="hidden sm:block text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
-    Pengumuman Hasil Tes <br />
-    Calon Anggota Baru NNM 17
-  </h1>
-</div>
-
+          {/* Desktop */}
+          <h1 className="hidden sm:block text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
+            Pengumuman Hasil Tes <br />
+            Calon Anggota Baru NNM 17
+          </h1>
+        </div>
 
         {/* INPUT + BUTTON */}
         <div className="w-full flex flex-col sm:flex-row gap-3">
           <input
             type="text"
-            placeholder="Masukkan NIM"
-            value={nim}
-            onChange={(e) => setNim(e.target.value)}
+            placeholder="Masukkan NIM atau Nama"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
             className="flex-1 bg-[#F5FAFD] border border-gray-300 rounded-full pl-4 pr-3 py-3 
                        text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600
                        placeholder-gray-500"

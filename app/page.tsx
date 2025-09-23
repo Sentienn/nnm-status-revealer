@@ -60,13 +60,12 @@ export default function Home() {
         {/* LOGO */}
         <div className="flex items-center justify-center mb-6">
           <img
-            src="https://i.imgur.com/sG7OgyT.png"
+            src="https://ik.imagekit.io/senttt/logo eo.png"
             alt="Nihon no Matsuri Logo"
             className="w-56 sm:w-72"
           />
         </div>
 
-        {/* TITLE */}
         {/* TITLE */}
 <div className="mb-8 text-center">
   {/* Mobile: 2 baris kecil */}

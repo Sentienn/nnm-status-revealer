@@ -13,7 +13,7 @@ interface Entry {
 
 export default function Home() {
   const [data, setData] = useState<Entry[]>([]);
-  const [query, setQuery] = useState(""); // sekarang bisa NIM / Nama
+  const [query, setQuery] = useState(""); 
   const [result, setResult] = useState<Entry | null>(null);
   const [showError, setShowError] = useState(false);
 

@@ -8,10 +8,13 @@ export default function ErrorPopup({ onClose }: ErrorPopupProps) {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       {/* background gelap */}
-      <div onClick={onClose} className="absolute inset-0 bg-black/50" />
+      <div
+        onClick={onClose}
+        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+      />
 
       {/* kotak popup */}
-      <div className="relative bg-white rounded-2xl shadow-xl max-w-lg w-full p-10 mx-4 text-center">
+      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 text-center">
         {/* tombol close (X) */}
         <button
           onClick={onClose}
@@ -21,17 +24,19 @@ export default function ErrorPopup({ onClose }: ErrorPopupProps) {
         </button>
 
         {/* judul */}
-        <h2 className="text-black text-3xl font-bold mb-4">Salah 0.o?</h2>
+        <h2 className="text-black text-2xl sm:text-3xl font-bold mb-4">
+          Salah 0.o?
+        </h2>
 
         {/* pesan */}
-        <p className="text-gray-700 mb-8 text-base leading-relaxed">
+        <p className="text-gray-700 mb-8 text-base sm:text-lg leading-relaxed">
           Maaf NIM yang kamu masukkan salah, silahkan periksa kembali NIM!
         </p>
 
         {/* tombol coba lagi */}
         <button
           onClick={onClose}
-          className="bg-[#BB001D] hover:bg-red-700 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-md"
+          className="bg-[#BB001D] hover:bg-red-700 text-white px-8 py-3 rounded-full text-base sm:text-lg font-semibold shadow-md transition"
         >
           Coba lagi
         </button>

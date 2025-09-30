@@ -75,11 +75,9 @@ export default function Home() {
         />
       </picture>
 
-      <div className="absolute inset-0 bg-black/30 -z-10" />
-
-      {/* LOGO ATAS */}
+      {/* LOGO ATAS (pakai public agar konsisten) */}
       <img
-        src="https://ik.imagekit.io/senttt/Mask%20group.png?updatedAt=1759239693893"
+        src="/logo-nnm.png"
         alt="NNM Logo"
         className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 
                    w-20 sm:w-24 md:w-28 lg:w-36 xl:w-40 z-10"

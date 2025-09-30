@@ -63,7 +63,6 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen w-full flex items-center justify-center px-4 overflow-hidden font-poppins">
-      {/* BACKGROUND */}
       <picture>
         <source
           media="(min-width: 768px)"
@@ -75,27 +74,20 @@ export default function Home() {
         />
       </picture>
 
-      {/* LOGO ATAS (pakai public agar konsisten) */}
       <img
         src="/logo-nnm.png"
         alt="NNM Logo"
-        className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 
-                   w-20 sm:w-24 md:w-28 lg:w-36 xl:w-40 z-10"
+        className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-36 xl:w-40 z-10"
       />
 
-      {/* CONTENT */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center text-white mt-28 px-4">
-        {/* TEKS PEMBUKA */}
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed 
-                      max-w-3xl mb-10 text-justify sm:text-center px-2 sm:px-0">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mb-10 text-justify sm:text-center px-2 sm:px-0">
           Hai! Para calon anggota NNM 17 yang baru, sebelum kamu menemukan
           takdirmu, kami dari pihak NNM 17 mau bilang kamu hebat, kamu mau
           mencoba, kamu mau belajar, dan tetap semangat ^^!
         </p>
 
-        {/* LOGO EO */}
-        <div className="mb-12 p-4 rounded-xl bg-white/30 border border-white/30 shadow-md 
-                        w-[260px] sm:w-[320px] md:w-[400px] lg:w-[480px]">
+        <div className="mb-12 p-4 rounded-xl bg-white/30 border border-white/30 shadow-md w-[260px] sm:w-[320px] md:w-[400px] lg:w-[480px]">
           <img
             src="https://ik.imagekit.io/senttt/logo%20eo.png"
             alt="Logo EO"
@@ -103,36 +95,28 @@ export default function Home() {
           />
         </div>
 
-        {/* JUDUL */}
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold 
-                       leading-snug mb-8 text-center">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-8 text-center">
           <span className="block sm:inline">Pengumuman Hasil Tes</span>{" "}
           <span className="block sm:inline">Calon Anggota Baru NNM 17</span>
         </h1>
 
-        {/* FORM */}
         <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3">
           <input
             type="text"
             placeholder="Masukkan NIM"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 bg-white/80 text-black border border-gray-300 
-                       rounded-full pl-4 pr-3 py-2 sm:py-3 text-sm sm:text-base 
-                       focus:outline-none focus:ring-2 focus:ring-red-600 placeholder-gray-500"
+            className="flex-1 bg-white/80 text-black border border-gray-300 rounded-full pl-4 pr-3 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600 placeholder-gray-500"
           />
           <button
             onClick={handleSearch}
-            className="bg-[#BB001D] hover:bg-red-700 text-white rounded-full 
-                       px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-semibold 
-                       w-full sm:w-auto flex items-center justify-center"
+            className="bg-[#BB001D] hover:bg-red-700 text-white rounded-full px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-semibold w-full sm:w-auto flex items-center justify-center"
           >
             Cek Hasil
           </button>
         </div>
       </div>
 
-      {/* ERROR POPUP */}
       {showError && <ErrorPopup onClose={() => setShowError(false)} />}
     </main>
   );

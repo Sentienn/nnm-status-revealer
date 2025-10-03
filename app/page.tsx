@@ -73,20 +73,18 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover object-center -z-10"
         />
       </picture>
-
+      <div className="absolute inset-0 bg-black/40 -z-10" />
       <img
         src="/logo-nnm.png"
         alt="NNM Logo"
-        className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-36 xl:w-40 z-10"
+        className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 z-20"
       />
-
-      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center text-white mt-28 px-4">
+      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center text-white mt-24 sm:mt-32 px-4">
         <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mb-10 text-justify sm:text-center px-2 sm:px-0">
           Hai! Para calon anggota NNM 17 yang baru, sebelum kamu menemukan
           takdirmu, kami dari pihak NNM 17 mau bilang kamu hebat, kamu mau
           mencoba, kamu mau belajar, dan tetap semangat ^^!
         </p>
-
         <div className="mb-12 p-4 rounded-xl bg-white/30 border border-white/30 shadow-md w-[260px] sm:w-[320px] md:w-[400px] lg:w-[480px]">
           <img
             src="https://ik.imagekit.io/senttt/logo%20eo.png"
@@ -94,12 +92,10 @@ export default function Home() {
             className="w-full object-contain"
           />
         </div>
-
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-8 text-center">
           <span className="block sm:inline">Pengumuman Hasil Tes</span>{" "}
           <span className="block sm:inline">Calon Anggota Baru NNM 17</span>
         </h1>
-
         <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3">
           <input
             type="text"
@@ -116,7 +112,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
       {showError && <ErrorPopup onClose={() => setShowError(false)} />}
     </main>
   );

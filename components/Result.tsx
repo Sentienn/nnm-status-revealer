@@ -32,7 +32,13 @@ export default function Result({
       </picture>
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      <div className="relative z-10 w-full max-w-2xl text-center text-white">
+      {/* <img
+        src="/logo-nnm.png"
+        alt="NNM Logo"
+        className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 z-20"
+      /> */}
+
+      <div className="relative z-10 w-full max-w-2xl text-center text-white mt-24 sm:mt-32">
         <div className="text-7xl md:text-8xl mb-6">{isLulus ? "🥳" : "🥲"}</div>
 
         <div className="bg-white/20 border border-white/30 backdrop-blur-md px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-lg">

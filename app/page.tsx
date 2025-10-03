@@ -99,7 +99,7 @@ export default function Home() {
         <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3">
           <input
             type="text"
-            placeholder="Masukkan NIM atau Nama"
+            placeholder="Masukkan NIM atau Nama Lengkap"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="flex-1 bg-white/80 text-black border border-gray-300 rounded-full pl-4 pr-3 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600 placeholder-gray-500"

@@ -77,7 +77,7 @@ export default function Home() {
       <img
         src="/logo-nnm.png"
         alt="NNM Logo"
-        className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 z-20"
+        className="absolute top-6 sm:top-8 md:top-10 left-1/2 -translate-x-1/2 w-24 sm:w-28 md:w-32 lg:w-36 xl:w-40 z-20"
       />
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center text-white mt-24 sm:mt-32 px-4">
         <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mb-10 text-justify sm:text-center px-2 sm:px-0">

@@ -32,20 +32,18 @@ export default function Result({
       </picture>
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      {/* <img
-        src="/logo-nnm.png"
-        alt="NNM Logo"
-        className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 z-20"
-      /> */}
+      <img
+        src="https://ik.imagekit.io/senttt/Mask%20group.png?updatedAt=1759463357954"
+        alt="Logo EO"
+        className="absolute top-6 sm:top-10 left-1/2 -translate-x-1/2 w-28 sm:w-32 md:w-40 lg:w-44 xl:w-48 z-20"
+      />
 
-      <div className="relative z-10 w-full max-w-2xl text-center text-white mt-24 sm:mt-32">
+      <div className="relative z-10 w-full max-w-2xl text-center text-white mt-32 sm:mt-40">
         <div className="text-7xl md:text-8xl mb-6">{isLulus ? "🥳" : "🥲"}</div>
-
         <div className="bg-white/20 border border-white/30 backdrop-blur-md px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             {isLulus ? "Selamat!" : "Aduh Maaf..."}
           </h2>
-
           <p className="text-base md:text-lg leading-relaxed mb-10 text-justify md:text-center">
             Halo{" "}
             <span className="text-white font-bold">
@@ -66,7 +64,6 @@ export default function Result({
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"
             )}
           </p>
-
           {isLulus && (
             <a
               href="#"
@@ -75,7 +72,6 @@ export default function Result({
               Masuk Grup
             </a>
           )}
-
           <button
             onClick={onBack}
             className="block w-4/5 max-w-sm mx-auto bg-white/85 border-2 border-[#BB001D] text-[#BB001D] hover:bg-[#BB001D] hover:text-white px-6 py-2 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"

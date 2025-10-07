@@ -19,6 +19,7 @@ export default function Result({
 
   return (
     <main className="relative min-h-screen w-full flex items-center justify-center px-6 overflow-hidden font-poppins">
+      {/* Background */}
       <picture>
         <source
           media="(min-width: 768px)"
@@ -32,19 +33,23 @@ export default function Result({
       </picture>
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
+      {/* Logo */}
       <img
         src="https://ik.imagekit.io/senttt/Mask%20group.png?updatedAt=1759463357954"
         alt="Logo EO"
         className="absolute top-6 sm:top-10 left-1/2 -translate-x-1/2 w-28 sm:w-32 md:w-40 lg:w-44 xl:w-48 z-20"
       />
 
+      {/* Konten utama */}
       <div className="relative z-10 w-full max-w-2xl text-center text-white mt-32 sm:mt-40">
         <div className="text-7xl md:text-8xl mb-6">{isLulus ? "🥳" : "🥲"}</div>
-        <div className="bg-white/20 border border-white/30 backdrop-blur-md px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-lg">
+
+        {/* Kotak transparan */}
+        <div className="bg-white/20 border border-white/30 backdrop-blur-md px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-lg mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             {isLulus ? "Selamat!" : "Aduh Maaf..."}
           </h2>
-          <p className="text-base md:text-lg leading-relaxed mb-10 text-justify md:text-center">
+          <p className="text-base md:text-lg leading-relaxed text-justify md:text-center">
             Halo{" "}
             <span className="text-white font-bold">
               {name} ({nim})
@@ -64,17 +69,21 @@ export default function Result({
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"
             )}
           </p>
+        </div>
+
+        {/* Tombol di luar kotak */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
           {isLulus && (
             <a
               href="#"
-              className="block w-4/5 max-w-sm mx-auto bg-[#BB001D] hover:bg-red-700 text-white px-6 py-2 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold mb-4 text-center transition"
+              className="w-4/5 sm:w-auto sm:min-w-[180px] bg-[#BB001D] hover:bg-red-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"
             >
               Masuk Grup
             </a>
           )}
           <button
             onClick={onBack}
-            className="block w-4/5 max-w-sm mx-auto bg-white/85 border-2 border-[#BB001D] text-[#BB001D] hover:bg-[#BB001D] hover:text-white px-6 py-2 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"
+            className="w-4/5 sm:w-auto sm:min-w-[180px] bg-white/85 border-2 border-[#BB001D] text-[#BB001D] hover:bg-[#BB001D] hover:text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"
           >
             Kembali
           </button>

@@ -42,7 +42,24 @@ export default function Result({
 
       {/* Konten utama */}
       <div className="relative z-10 w-full max-w-2xl text-center text-white mt-32 sm:mt-40">
-        <div className="text-7xl md:text-8xl mb-6">{isLulus ? "🥳" : "🥲"}</div>
+        <div className="flex justify-center mb-6">
+          {isLulus ? (
+            <video
+              src="/happy.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-40 h-40 md:w-56 md:h-56 rounded-xl shadow-lg object-cover"
+            />
+          ) : (
+            <img
+              src="/sad.jpg"
+              alt="Sedih"
+              className="w-40 h-40 md:w-56 md:h-56 rounded-xl shadow-lg object-cover"
+            />
+          )}
+        </div>
 
         {/* Kotak transparan */}
         <div className="bg-white/20 border border-white/30 backdrop-blur-md px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-lg mb-8">

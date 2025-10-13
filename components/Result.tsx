@@ -92,7 +92,7 @@ export default function Result({
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
           {isLulus && (
             <a
-              href="#"
+              href="https://chat.whatsapp.com/K9Fe8JEBIn8IIerVPoJNlc?mode=wwc"
               className="w-4/5 sm:w-auto sm:min-w-[180px] bg-[#BB001D] hover:bg-red-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"
             >
               Masuk Grup

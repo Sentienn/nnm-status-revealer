@@ -79,8 +79,7 @@ export default function Result({
                 <span className="text-white font-bold">
                   Kelompok {grup || "-"}
                 </span>
-                ! Terimakasih atas partisipasinya dan tunggu pengumuman
-                selanjutnya!
+                ! Terima kasih atas partisipasinya! Silakan bergabung ke grup yang telah ditentukan dan tunggu informasi selanjutnya.
               </>
             ) : (
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"

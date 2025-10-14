@@ -66,7 +66,7 @@ export default function Result({
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             {isLulus ? "Selamat!" : "Aduh Maaf..."}
           </h2>
-          <p className="text-base md:text-lg leading-relaxed text-justify md:text-justify">
+          <p className="text-base md:text-lg leading-relaxed text-center md:text-center">
             Halo{" "}
             <span className="text-white font-bold">
               {name} ({nim})

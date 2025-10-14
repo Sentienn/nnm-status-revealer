@@ -19,13 +19,13 @@ export default function ErrorPopup({ onClose }: ErrorPopupProps) {
           Salah 0.o?
         </h2>
         <p className="text-gray-700 mb-8 text-base sm:text-lg leading-relaxed">
-          Bagi yang NIM dan namanya tidak terdaftar di website, kami mohon maaf karena belum lolos ke tahap selanjutnya. Terima kasih atas partisipasinya, semoga sukses di kesempatan berikutnya.
+          Bagi yang NIM atau namanya tidak terdaftar di website, mohon maaf karena belum lolos ke tahap selanjutnya. Jika salah satu datanya berhasil diakses, silakan hubungi CP untuk pemeriksaan lebih lanjut. Terima kasih atas partisipasinya! 
         </p>
         <button
           onClick={onClose}
           className="bg-[#BB001D] hover:bg-red-700 text-white px-8 py-3 rounded-full text-base sm:text-lg font-semibold shadow-md transition"
         >
-          Coba lagi
+          back
         </button>
       </div>
     </div>

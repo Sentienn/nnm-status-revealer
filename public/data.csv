@@ -1,4 +1,202 @@
-Timestamp,NIM,Kelamin,Nama,Status,Grup
-22/09/2025 21:27:19,103022123,L,Denji,Lulus,A
-22/09/2025 21:27:31,1030321,P,Cena,Tidak Lulus,
-,10123321,L,Rusdi,Lulus,F
+Nama;NIM;Kelompok;Status
+Agung Priyambodo;104032500013;;LULUS
+Tubagus M. Raafi Fahrizal S.;102012300406;;LULUS
+Salma Shafa Humaira Fadhlulhaq;106012400002;;LULUS
+Ali Ghimar Budiana;607062500004;;LULUS
+Annisa Aurelia Legowo;101052530022;;LULUS
+Adinda Kamilatunnisa;104022500095;;LULUS
+Rayhandra Althaf Athaur Rahman;106012400288;;LULUS
+Raden Daffa Muhammad;102012400023;;LULUS
+Syamsi Ali Muqsith;103022400088;;LULUS
+Siti Imarlien Febry Boenzalie;106012500106;;LULUS
+Gama Hendra Guntara;103012540005;;LULUS
+Muhammad Zaini;103012300313;;LULUS
+Siti Annisa Kusumo;607072500079;;LULUS
+Abthal Raza Fahim Kusuma;102022530041;;LULUS
+Myshela Putri Risa Pasaribu;607052500003;;LULUS
+Muhammad Zulvan Abdallah Gani;103012440012;;LULUS
+Alisya zuhailuna;102022440007;;LULUS
+Rafi Syaputra;103012400384;;LULUS
+Rangga Harja Kusumah;101042400002;;LULUS
+Rizal Fauzan Ahmadsyeh;102022400270;;LULUS
+Dzikra Athallah Kawiswara;105012540008;;LULUS
+Muhammad Irham Virendra;105022500076;;LULUS
+M.Helmi;101012500103;;LULUS
+Ghifar Anshari Rabbani;103012400003;;LULUS
+Amadeo Maximillian;102012330112;;LULUS
+Marco Syahin Maulana Mafau;103052500097;;LULUS
+Naufal Yuava Rasyadan;103012400210;;LULUS
+Kevin Timothy Nugroho;106012500054;;LULUS
+Panji Krisna Hadiwijaya;106812530029;;LULUS
+Faustinus Justin Cia;103052500019;;LULUS
+Muhammad Ihsan Abdurrasyid;103012400354;;LULUS
+Muhammad Sylva Sadjandegi;103012400132;;LULUS
+Meilina Elmira Ilma;106032330184;;LULUS
+Ibnu Hafidz;103022400064;;LULUS
+Muhammad Fattah Prasodjo;101032400022;;LULUS
+Rifky albuchori;103022400126;;LULUS
+Rakha Rifan Ahmad;707012500094;;LULUS
+Diaz Hidayatullah Zamhari;101042300084;;LULUS
+Andri Maulana Muhamad;101022400253;;LULUS
+Riska Aulia Pertiwi;101022400220;;LULUS
+Aisyah Khoerunnisaa;105042500130;;LULUS
+Fitria Azzahro Pramesti;105042500009;;LULUS
+Dziaulhaq Mahaputra;104012300108;;LULUS
+Diaz Surya Ramadhan;103022500109;;LULUS
+DIMAS ACHMAD ARDYANSYAH;102022500162;;LULUS
+Christian Farrel;101012530005;;LULUS
+maria kezia Hartanto;607072500026;;LULUS
+Achdan Rafid Albaihaqi;101032400052;;LULUS
+nasywa rabani afinda putri;101032400123;;LULUS
+Hamad Dafala;103012400386;;LULUS
+Assyla Rameyza Qanita;106012400295;;LULUS
+Althaharah Wildannisa Sakurawikara Asmaradjati;106012530031;;LULUS
+Maelridzky Kahidz Agdana;103022500085;;LULUS
+Ali Luqmanul Hakim;103012300487;;LULUS
+Reiga Nararya Abhipraya;102032500057;;LULUS
+Muhammad Abimanyu;101032500239;;LULUS
+Muhammad Fawwaz Adiramukti;105022500175;;LULUS
+William;103032500125;;LULUS
+Gilang putra ramadhan;106012400399;;LULUS
+gusti ayu priska saraswati;102022530016;;LULUS
+Zasq Zehan Zukhrufuljannah;101022430014;;LULUS
+Bayu Alif Aryo Wiputra;103012430057;;LULUS
+Nabila Zahra Khairuddin;106012400017;;LULUS
+Ulul Aswi Oktaeka Ramadani;105032430007;;LULUS
+Nadhif Ananta;106012530024;;LULUS
+Adit Mayora Pratama;106012500368;;LULUS
+Afrizal Sysdianto Prathama;103012400382;;LULUS
+Ardian Rahman;106022500012;;LULUS
+Raditya Aydhin Parisya;106042500027;;LULUS
+Muhamad Andra Putra Wicaksana;105042500082;;LULUS
+Ahmad Faris;103012400050;;LULUS
+Dzikraa Bayu Nugraha;106012400062;;LULUS
+Ibrahim Oneal Rafif;106012400349;;LULUS
+Arvel zamiir fathoni;106072530006;;LULUS
+Muhamad Rayhan Nabil Setiawan;106012500010;;LULUS
+Nadisha Alya Faturohman;106012500014;;LULUS
+syahila alfita;106012500116;;LULUS
+Luthfina Izza Fitria;106012530028;;LULUS
+Halwa Amali Syazwina;102022500073;;LULUS
+Asyri Rajwa Husni;607032530004;;LULUS
+Nailah Ghaida;106012300169;;LULUS
+Syathira Nur Alifah;106012400298;;LULUS
+Risma Sidqia Salsabila;106012400107;;LULUS
+Mutiara Khailla Gyanissa Putri;105032400009;;LULUS
+Amalina Nursabrina;106012400149;;LULUS
+Naura Syawal Athallah Putri;103032430001;;LULUS
+Ririn Nur Aini;103032400054;;LULUS
+Kristalina Wulan Sulistyo;106012530044;;LULUS
+Septiana Rahmawati;101032400007;;LULUS
+Cantik Dian Nugrahani;106042500003;;LULUS
+Miftahul Huda;101022500162;;LULUS
+Nazwa Nabilla Adri;106022330097;;LULUS
+Bayu Ardhi Nugroho;101042500041;;LULUS
+Annisa Syafitri;104012500371;;LULUS
+Ridho darmawan;101032400004;;LULUS
+Muhammad Rifki Rahmatulloh R I;607062500048;;LULUS
+Berni Venus Mutri Azhara;103032500038;;LULUS
+Nabil cozadi alfarizi;103012500008;;LULUS
+Syauqi Nurfikri Rahman;103012300299;;LULUS
+M. Faza Ilham;106012500076;;LULUS
+Nazwa Annabila Lubis;102012500349;;LULUS
+Siti Rahma Aisha Nydia Amarant;105042500082;;LULUS
+Syifa Rahmah;106012400117;;LULUS
+I Putu Yuga Artajaya;106012500033;;LULUS
+Nurhasna Fadhilah;106012430007;;LULUS
+Muhammad Faiz Musyaffa;607072500003;;LULUS
+Teresa Widi Astutiningtyas;106012500060;;LULUS
+Rasyad Haqqani;106027500032;;LULUS
+Nurulfista Rizky Kurniawati;106012500040;;LULUS
+Michael Sereno Nugroho;101022530013;;LULUS
+Karin Belianique;106012400013;;LULUS
+Rifda Rahima;104022500046;;LULUS
+Abdurrahman Miqdad;106012500208;;LULUS
+Abyan Khairul Hadi Susila;101038500090;;LULUS
+Aisha Levana M;106012330139;;LULUS
+Aisyah Tazkiya Hidayat;106052400072;;LULUS
+Fathi Rizqullah Ramadhian;106072500040;;LULUS
+Izza Haidar Adna;106012500137;;LULUS
+Jauza Rizqy Ramadhani;106012300137;;LULUS
+Kevin Richart Mamuaya;106012500122;;LULUS
+Khalisa Nadira Umari;102012500146;;LULUS
+Lukmanul Hakim;106032330132;;LULUS
+Maulana Candra Gumilang;106012430030;;LULUS
+Maulida Mahua Syiffa Tsakila;106012500292;;LULUS
+Muhammad Raifan Abrisam;106012500161;;LULUS
+Naila Hafidz Bachtiar;102022300298;;LULUS
+Naufal Harsya Pramudito;101032400024;;LULUS
+Nazuya Aliyyah Alfath;106012300199;;LULUS
+Putu Nayaka Indrasta Ambara;106012500322;;LULUS
+Rafael Gyda Prabowo;106012500217;;LULUS
+Rafie Zulhilmi Purwanto;707022500005;;LULUS
+Raisa Meviasari Riefanti;10601243002;;LULUS
+Randu Suluh Ilalang;103022500044;;LULUS
+SATRIO MAULANA DJATMIKO;101022300240;;LULUS
+Yohanes Surya Ersada Perangin Angin;106012330397;;LULUS
+Yolanda Larasati;106012300134;;LULUS
+Gading Gabriel Sertano;106012500123;;LULUS
+Artty Shabrina Cinta;101012530024;;LULUS
+Hazim Aunur Rahman;106012500099;;LULUS
+Fathan Zulva;101032400239;;TIDAK LULUS
+Alfredo Lionel Novarianto;103052530003;;TIDAK LULUS
+Mohammad Abdul Aziz;607062500056;;TIDAK LULUS
+Mahadivika Iman Nasri;103012500374;;TIDAK LULUS
+Mochamad Basith ElangJava;103012500173;;TIDAK LULUS
+Lutfi Raditya Warsono;101032400018;;TIDAK LULUS
+Abyan Daffa Budiono;101032500098;;TIDAK LULUS
+Fildan Firdian Syahputra;103022500051;;TIDAK LULUS
+Taraka Yumna Sarwoko;103012300242;;TIDAK LULUS
+Azh Zhahir Ramadhan P;103012400223;;TIDAK LULUS
+Rahmat Teja Permana Putra;102022500111;;TIDAK LULUS
+Rafi Diara Ichdahana;101022500015;;TIDAK LULUS
+Razan muhammad yusuf;102022530002;;TIDAK LULUS
+Muhammad Ammar Rafan;106012500269;;TIDAK LULUS
+Muhammad Raka Ariendra Putra;106012500051;;TIDAK LULUS
+Radhitya Nova Pratama;102022500162;;TIDAK LULUS
+Darrent Fabio Athaillah;104012440005;;TIDAK LULUS
+Shahan Fathallah Hadyan;103032400086;;TIDAK LULUS
+Habiib Al 'Aziiz Nasution;707012500055;;TIDAK LULUS
+Gibran Nabil Almuyasar;101012500175;;TIDAK LULUS
+Adam Fathanel;102012300366;;TIDAK LULUS
+Muhammad Faris Dhiyayl Haq Sarbini;103032400117;;TIDAK LULUS
+Bunga Regita;607072500005;;TIDAK LULUS
+Daisaq Hadya Albar;103012300158;;TIDAK LULUS
+Ghanif Hadiyana Akbar;103012300018;;TIDAK LULUS
+Arya Wijaya;103012330330;;TIDAK LULUS
+Hazel Argyanto;103012500074;;TIDAK LULUS
+Michael William Setiawan Wee;102022400122;;TIDAK LULUS
+Abdul Khalik Esa Perkasa;103052500022;;TIDAK LULUS
+Muhammad Raka Aditya Wicaksana;102032400049;;TIDAK LULUS
+Jose Benaya Rehiary;101032400105;;TIDAK LULUS
+Rakan Ghazian Adiwijaya;103032430034;;TIDAK LULUS
+Ahmad Abdan Syakuro;103032400029;;TIDAK LULUS
+Fahreza Praditya Wahyudi;101012500179;;TIDAK LULUS
+Hasel Admaja;103012400140;;TIDAK LULUS
+Raka Satria Hafiz;103032500187;;TIDAK LULUS
+Fauzan Dwi Septiana;105012500097;;TIDAK LULUS
+Muhammad Alfarabi Tumanggor;106042500003;;TIDAK LULUS
+Rangga Luthfiendi;103022400021;;TIDAK LULUS
+Gayatri Aaliyah Adhitya Tama;106012400378;;TIDAK LULUS
+Reza Fahlevy;101012300330;;TIDAK LULUS
+Aurell Ameilia Kirana Artanti;106012300031;;TIDAK LULUS
+Salsabila Irsani Irsani;106012500207;;TIDAK LULUS
+Rizky Nur Azizah ;106012400201;;TIDAK LULUS
+Arini Ika Ramadhani;106012400039;;TIDAK LULUS
+Bimo Raffi Firdaus;106032500094;;TIDAK LULUS
+Hasna Naurah Fadiyah;101032400206;;TIDAK LULUS
+Nizham Faris Hasbillah;101032400142;;TIDAK LULUS
+Firman Wibowo Sarwoko ;106012400155;;TIDAK LULUS
+Duncan Agastya Kurniawan;103012530055;;TIDAK LULUS
+rizky ramadan;101022500044;;TIDAK LULUS
+M. Aditya Avrian;101022530001;;TIDAK LULUS
+Nabiel Ilmana Al-Ghifary;607062500030;;TIDAK LULUS
+Muhamad Raffi Pryatama;101032500006;;TIDAK LULUS
+Dimas 'Aziiz Zaky Saputra;103025500067;;TIDAK LULUS
+Mikael Eureka Anakotta;103012400420;;TIDAK LULUS
+Razan Aljabbar Mazaya Faza;106012500052;;TIDAK LULUS
+Fajrul Abyansamaru Rusli;101032500047;;TIDAK LULUS
+Alnajwan Ksatria Davianto;103012430060;;TIDAK LULUS
+Muhammad Farrel Ferdiansyah;106012400016;;TIDAK LULUS
+muhammad farhan alfaiz;101032500129;;TIDAK LULUS
+Putri Sekar Arum Jati;106012500356;;TIDAK LULUS

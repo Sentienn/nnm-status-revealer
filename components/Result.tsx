@@ -75,11 +75,7 @@ export default function Result({
             {isLulus ? (
               <>
                 Kamu telah berhasil melewati tes wawancara di Nihon no Matsuri
-                17 dan tergabung dalam{" "}
-                <span className="text-white font-bold">
-                  Kelompok {grup || "-"}
-                </span>
-                ! Terima kasih atas partisipasinya! Silakan bergabung ke grup yang telah ditentukan dan tunggu informasi selanjutnya.
+                17! Terima kasih atas partisipasinya! Silakan bergabung ke grup dan tunggu informasi selanjutnya.
               </>
             ) : (
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"

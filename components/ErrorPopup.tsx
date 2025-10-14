@@ -19,7 +19,7 @@ export default function ErrorPopup({ onClose }: ErrorPopupProps) {
           Salah 0.o?
         </h2>
         <p className="text-gray-700 mb-8 text-base sm:text-lg leading-relaxed">
-          Maaf NIM atau Nama yang kamu masukkan salah, silahkan periksa kembali NIM atau Nama!
+          Bagi yang NIM dan namanya tidak terdaftar di website, kami mohon maaf karena belum lolos ke tahap selanjutnya. Terima kasih atas partisipasinya, semoga sukses di kesempatan berikutnya.
         </p>
         <button
           onClick={onClose}

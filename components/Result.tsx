@@ -74,8 +74,9 @@ export default function Result({
             ,{" "}
             {isLulus ? (
               <>
-                Kamu telah berhasil melewati tes wawancara di Nihon no Matsuri
-                17! Terima kasih atas partisipasinya! Silakan bergabung ke grup dan tunggu informasi selanjutnya.
+                Kamu telah berhasil melewati semua tes di Nihon no Matsuri
+                17! Terima kasih atas partisipasinya! Silakan bergabung ke grup ke link di bawah ini dan tunggu informasi selanjutnya.
+                https://line.me/R/ti/g/xLKE8gS8rt
               </>
             ) : (
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"

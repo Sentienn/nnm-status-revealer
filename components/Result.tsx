@@ -76,7 +76,6 @@ export default function Result({
               <>
                 Kamu telah berhasil melewati semua tes di Nihon no Matsuri
                 17! Terima kasih atas partisipasinya! Silakan bergabung ke grup ke link di bawah ini dan tunggu informasi selanjutnya.
-                https://line.me/R/ti/g/xLKE8gS8rt
               </>
             ) : (
               "mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 17. Terimakasih atas partisipasinya dan tetap semangat!"
@@ -88,7 +87,7 @@ export default function Result({
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
           {isLulus && (
             <a
-              href="https://chat.whatsapp.com/K9Fe8JEBIn8IIerVPoJNlc?mode=wwc"
+              href="https://line.me/R/ti/g/xLKE8gS8rt"
               className="w-4/5 sm:w-auto sm:min-w-[180px] bg-[#BB001D] hover:bg-red-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-center transition"
             >
               Masuk Grup

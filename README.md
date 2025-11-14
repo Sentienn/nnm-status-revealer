@@ -29,7 +29,3 @@ Participants' data can be imported using a **CSV file**.
 
 ---
 
-## 📌 Notes
-- This project is still **in development**.  
-- Future improvements may include better UI/UX.  
-- Contributions, suggestions, and feedback are **very welcome**.  

@@ -37,8 +37,10 @@ export default function Home() {
 
   const handleSearch = () => {
     const input = query.trim().toLowerCase();
+    if (!input) return;
+
     const found = data.find(
-      (d) => d.NIM.toLowerCase() === input || d.Nama.toLowerCase() === input
+      (d) => d.NIM?.toLowerCase() === input || d.Nama?.toLowerCase() === input
     );
     if (found) {
       setResult(found);
@@ -46,6 +48,12 @@ export default function Home() {
     } else {
       setResult(null);
       setShowError(true);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearch();
     }
   };
 
@@ -62,56 +70,99 @@ export default function Home() {
   }
 
   return (
-    <main className="relative min-h-screen w-full flex items-center justify-center px-4 overflow-hidden font-poppins">
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcSet="https://ik.imagekit.io/senttt/6b9e72a6082f607be35d0f3fc502e5d5%202(1)(1).png?updatedAt=1759245970297"
-        />
-        <img
-          src="https://ik.imagekit.io/senttt/6b9e72a6082f607be35d0f3fc502e5d5%202.png?updatedAt=1759239802547"
-          className="absolute inset-0 w-full h-full object-cover object-center -z-10"
-        />
-      </picture>
-      <div className="absolute inset-0 bg-black/40 -z-10" />
+    <main className="relative min-h-[100dvh] w-full flex flex-col justify-between items-center overflow-x-hidden font-montserrat select-none">
+      {/* Menggunakan flex-col dan justify-between untuk mendorong elemen ke atas dan bawah layar */}
+
+      {/* 1. BACKGROUND */}
       <img
-        src="/logo-nnm.png"
-        alt="NNM Logo"
-        className="absolute top-6 sm:top-8 md:top-10 left-1/2 -translate-x-1/2 w-24 sm:w-28 md:w-32 lg:w-36 xl:w-40 z-20"
+        src="/images/bg.jpg"
+        alt="Nihon No Matsuri Background"
+        className="absolute inset-0 w-full h-full object-cover object-center -z-20"
       />
-      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center text-white mt-24 sm:mt-32 px-4">
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mb-10 text-center sm:text-center px-2 sm:px-0">
-          Hai! Para calon anggota NNM 17 yang baru, sebelum kamu menemukan
-          takdirmu, kami dari pihak NNM 17 mau bilang kamu hebat, kamu mau
-          mencoba, kamu mau belajar, dan tetap semangat ^^!
-        </p>
-        <div className="mb-12 p-4 rounded-xl bg-white/30 border border-white/30 shadow-md w-[260px] sm:w-[320px] md:w-[400px] lg:w-[480px]">
-          <img
-            src="https://ik.imagekit.io/senttt/logo%20eo.png"
-            alt="Logo EO"
-            className="w-full object-contain"
-          />
-        </div>
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-8 text-center">
-          <span className="block sm:inline">Pengumuman Hasil Tes</span>{" "}
-          <span className="block sm:inline">Calon Anggota Baru NNM 17</span>
-        </h1>
-        <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3">
-          <input
-            type="text"
-            placeholder="Masukkan NIM atau Nama Lengkap"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 bg-white/80 text-black border border-gray-300 rounded-full pl-4 pr-3 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-red-600 placeholder-gray-500"
-          />
-          <button
-            onClick={handleSearch}
-            className="bg-[#BB001D] hover:bg-red-700 text-white rounded-full px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-semibold w-full sm:w-auto flex items-center justify-center"
-          >
-            Cek Hasil
-          </button>
+      <div className="absolute inset-0 bg-black/10 -z-10" />
+      {/* 2. HEADER AREA (Logo & Greeting) */}
+      <div className="flex flex-col items-center pt-2 sm:pt-4 z-10 px-4">
+        <img
+          src="/images/logo.png"
+          alt="Nihon No Matsuri Logo"
+          className="w-[160px] sm:w-[205px] h-auto object-contain drop-shadow-lg mb-1 sm:mb-2"
+        />
+        <div className="text-center max-w-[90%] sm:max-w-xl font-montserrat font-medium text-[12px] sm:text-[14px] md:text-[15px] leading-[140%] text-white drop-shadow-md">
+          <p>Halo calon keluarga NNM 18! 👋</p>
+          <p>
+            Sebelum lanjut ke babak baru, kami cuma mau bilang: KALIAN KEREN! Terima kasih udah berani mencoba dan ngasih yang terbaik. Tetap semangat! ✨
+          </p>
         </div>
       </div>
+
+      {/* 3. AREA BAWAH (Judul & Form Pencarian) */}
+      {/* pb-6 mengatur jarak form dari dasar layar agar pas berada di area jalan setapak */}
+      <div className="w-full flex flex-col items-center pb-6 sm:pb-10 z-10 px-4">
+
+        {/* Title */}
+        <div className="mb-3 sm:mb-4 font-montserrat font-extrabold text-[18px] sm:text-[22px] md:text-[26px] leading-[120%] text-center text-white drop-shadow-lg">
+          <h1 className="font-extrabold">
+            <span className="block">Pengumuman Hasil Tes</span>
+            <span className="block">Calon Anggota Baru NNM 18</span>
+          </h1>
+        </div>
+
+        {/* Form Section */}
+        <div className="w-full max-w-[360px] sm:max-w-md md:max-w-xl flex flex-col items-center">
+          <p className="font-montserrat font-medium text-[12px] sm:text-[14px] leading-[122%] text-center text-white mb-2 sm:mb-3 drop-shadow-md">
+            Silahkan Masukkan NIM atau Nama Lengkap
+          </p>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSearch();
+            }}
+            className="w-full flex flex-col items-center gap-3"
+          >
+            {/* Input Pill */}
+            <div className="w-full relative flex items-center bg-black/45 backdrop-blur-md border border-orange-500/80 rounded-full p-1 sm:p-1.5 shadow-xl transition-all focus-within:border-orange-400 focus-within:ring-2 focus-within:ring-orange-500/50">
+              <button
+                type="button"
+                onClick={handleSearch}
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-[#FF5500] hover:bg-[#E04800] text-white rounded-full flex items-center justify-center shrink-0 shadow-md transition-transform active:scale-95"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+              <input
+                type="text"
+                placeholder=""
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                onKeyDown={handleKeyDown}
+                className="w-full bg-transparent text-white px-3 sm:px-4 py-2 focus:outline-none font-montserrat font-medium text-sm sm:text-base placeholder-gray-400"
+              />
+            </div>
+
+            {/* SELANJUTNYA Button */}
+            <button
+              type="submit"
+              className="w-full bg-[#FF5500] hover:bg-[#E04800] text-white font-montserrat font-bold text-[14px] sm:text-[16px] tracking-normal py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-[1.01] active:scale-[0.98]"
+            >
+              SELANJUTNYA
+            </button>
+          </form>
+        </div>
+      </div>
+
       {showError && <ErrorPopup onClose={() => setShowError(false)} />}
     </main>
   );

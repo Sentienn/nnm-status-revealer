@@ -20,25 +20,23 @@ export default function Result({
   return (
     <main className="relative min-h-screen w-full flex items-center justify-center px-6 overflow-hidden font-poppins">
       {/* Background */}
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcSet="https://ik.imagekit.io/senttt/6b9e72a6082f607be35d0f3fc502e5d5%202(1)(1).png?updatedAt=1759245970297"
-        />
-        <img
-          src="https://ik.imagekit.io/senttt/6b9e72a6082f607be35d0f3fc502e5d5%202.png?updatedAt=1759239802547"
-          className="absolute inset-0 w-full h-full object-cover object-center -z-10"
-          alt="Background"
-        />
-      </picture>
+      <img
+        src="/images/bg.jpg"
+        className="fixed inset-0 w-full h-full object-cover object-[center_35%] -z-10"
+        alt="Background"
+      />
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
       {/* Logo */}
-      <img
-        src="https://ik.imagekit.io/senttt/Mask%20group.png?updatedAt=1759463357954"
-        alt="Logo EO"
-        className="absolute top-6 sm:top-10 left-1/2 -translate-x-1/2 w-28 sm:w-32 md:w-40 lg:w-44 xl:w-48 z-20"
-      />
+      <div className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 z-20">
+        <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-md">
+          <img
+            src="/images/logo.png"
+            alt="NNM Logo"
+            className="h-10 sm:h-12 md:h-14 object-contain"
+          />
+        </div>
+      </div>
 
       {/* Konten utama */}
       <div className="relative z-10 w-full max-w-2xl text-center text-white mt-32 sm:mt-40">

@@ -6,26 +6,37 @@ interface ErrorPopupProps {
 
 export default function ErrorPopup({ onClose }: ErrorPopupProps) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 font-poppins">
-      <div onClick={onClose} className="absolute inset-0 bg-black/50" />
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 text-center">
+    <div className="fixed inset-0 flex items-center justify-center z-50 font-montserrat px-4">
+      {/* Overlay background */}
+      <div onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      
+      {/* Kotak Popup */}
+      <div className="relative bg-[#0a0a0a] border border-white/10 rounded-3xl shadow-2xl max-w-lg w-full p-8 md:p-10 text-center">
+        {/* Tombol Close (X) */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-xl"
+          className="absolute top-5 right-6 text-gray-400 hover:text-white text-xl transition-colors"
+          aria-label="Tutup"
         >
           ✕
         </button>
-        <h2 className="text-black text-2xl sm:text-3xl font-bold mb-4">
-          Salah 0.o?
+
+        {/* Judul */}
+        <h2 className="text-white text-2xl md:text-3xl font-extrabold mb-5">
+          Salah O.o?
         </h2>
-        <p className="text-gray-700 mb-8 text-base sm:text-lg leading-relaxed">
-          Bagi yang NIM atau namanya tidak terdaftar di website, mohon maaf karena belum lolos ke tahap selanjutnya. Jika salah satu datanya berhasil diakses, silakan hubungi CP untuk pemeriksaan lebih lanjut. Terima kasih atas partisipasinya! 
+
+        {/* Pesan Error */}
+        <p className="text-gray-200 mb-8 text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed">
+          Halo! Kalau nama atau NIM kamu belum muncul di website, mohon maaf banget kamu belum bisa lanjut ke tahap berikutnya. 😔 Tapi tenang, kalau cuma salah satu data aja yang bisa diakses, buruan hubungi CP kita untuk pemeriksaan lebih lanjut, ya. Terima kasih banyak atas antusiasmenya! 🙌
         </p>
+
+        {/* Tombol Kembali */}
         <button
           onClick={onClose}
-          className="bg-[#BB001D] hover:bg-red-700 text-white px-8 py-3 rounded-full text-base sm:text-lg font-semibold shadow-md transition"
+          className="w-full bg-[#FF5500] hover:bg-[#E04800] text-white py-3.5 rounded-full text-sm sm:text-base font-bold shadow-lg transition-transform transform hover:scale-[1.02] active:scale-[0.98]"
         >
-          back
+          KEMBALI
         </button>
       </div>
     </div>

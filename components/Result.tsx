@@ -73,7 +73,7 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
         <div className="flex flex-col items-center gap-3 w-full max-w-[90%] sm:max-w-sm">
           {isLulus && (
             <a
-              href="https://line.me/R/ti/g/mZxRcMgveG"
+              href="https://chat.whatsapp.com/CAJhKTeYbUH8lPJkfeS7cX?s=cl&p=a&mlu=4&ilr=4"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#FF5500] hover:bg-[#E04800] text-white px-5 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-[14px] font-extrabold shadow-md transition-transform hover:scale-105 uppercase tracking-wide text-center"

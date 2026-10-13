@@ -61,7 +61,7 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
             Halo <span className="font-bold text-[#FF5500] drop-shadow-sm">{name} ({nim})</span>,{" "}
             {isLulus ? (
               <>
-                Kamu telah berhasil melewati semua tes di Nihon no Matsuri 18! Ganbateee! ヾ(≧▽≦*)o Silakan bergabung ke grup dan tunggu informasi selanjutnya.
+                Kamu telah berhasil melewati tahap wawancara di Nihon no Matsuri 18! Ganbateee! ヾ(≧▽≦*)o Silakan bergabung ke grup dan tunggu informasi selanjutnya.
               </>
             ) : (
               "Mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 18. Terima kasih atas partisipasinya dan tetap semangat!"

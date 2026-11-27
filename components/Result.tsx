@@ -61,7 +61,7 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
             Halo <span className="font-bold text-[#FF5500] drop-shadow-sm">{name} ({nim})</span>,{" "}
             {isLulus ? (
               <>
-                selamat! Kamu resmi dinyatakan <span className="font-bold">LULUS</span> seleksi panitia Nihon no Matsuri 18! Terima kasih sudah memberikan yang terbaik di tahap wawancara. Perjalanan seru kita baru saja dimulai—yuk langsung gabung ke grup panitia untuk info selanjutnya. Ganbarimashou! ヾ(≧▽≦*)o
+                selamat! Kamu resmi dinyatakan <span className="font-bold">LULUS</span> seleksi panitia Nihon no Matsuri 18! Terima kasih sudah memberikan yang terbaik. Perjalanan seru kita baru saja dimulai—yuk langsung gabung ke grup panitia untuk info selanjutnya. Ganbarimashou! ヾ(≧▽≦*)o
               </>
             ) : (
               "mohon maaf kamu belum bisa lanjut ke kepanitiaan Nihon no Matsuri 18. Terima kasih banyak atas antusiasme dan partisipasinya, tetap semangat ya!"

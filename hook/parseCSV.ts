@@ -16,15 +16,21 @@ export function parseCSV() {
     fetch("/data.csv")
       .then((res) => res.text())
       .then((text) => {
-        const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
-        const extracted: Participant[] = (parsed.data as Record<string, string>[]).map(
-          (entry) => ({
-            NIM: entry["NIM"]?.trim() || "",
-            Nama: entry["Nama"]?.trim() || "",
-            Status: entry["Status"]?.trim() || "",
-            Grup: entry["Grup"]?.trim() || "",
-          })
-        );
+        const parsed = Papa.parse(text, {
+          header: true,
+          skipEmptyLines: true,
+          transformHeader: (header) => header.trim(),
+        });
+
+        const extracted: Participant[] = (
+          parsed.data as Record<string, string>[]
+        ).map((entry) => ({
+          NIM: entry["NIM"]?.trim() || "",
+          Nama: entry["Nama"]?.trim() || "",
+          Status: (entry["Status"] || entry["Keterangan"] || "").trim(),
+          Grup: entry["Grup"]?.trim() || "",
+        }));
+
         setData(extracted);
         setIsLoading(false);
       })

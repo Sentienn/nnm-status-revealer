@@ -55,16 +55,16 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
         {/* KOTAK PENGUMUMAN */}
         <div className="bg-white/10 border border-white/20 backdrop-blur-lg px-5 py-6 sm:px-10 sm:py-8 rounded-3xl shadow-2xl mb-5 sm:mb-7 w-full max-w-[95%]">
           <h2 className="text-2xl sm:text-3xl md:text-[32px] font-bold mb-3 sm:mb-4 drop-shadow-md">
-            {isLulus ? "Yeyy Selamat!" : "Aduh Maaf..."}
+            {isLulus ? "Omedetou! Selamat Bergabung! 🎉" : "Aduh Maaf..."}
           </h2>
           <p className="text-[14px] sm:text-base md:text-lg leading-relaxed">
             Halo <span className="font-bold text-[#FF5500] drop-shadow-sm">{name} ({nim})</span>,{" "}
             {isLulus ? (
               <>
-                Kamu telah berhasil melewati tahap wawancara di Nihon no Matsuri 18! Ganbateee! ヾ(≧▽≦*)o Silakan bergabung ke grup dan tunggu informasi selanjutnya.
+                selamat! Kamu resmi dinyatakan <span className="font-bold">LULUS</span> seleksi panitia Nihon no Matsuri 18! Terima kasih sudah memberikan yang terbaik di tahap wawancara. Perjalanan seru kita baru saja dimulai—yuk langsung gabung ke grup panitia untuk info selanjutnya. Ganbarimashou! ヾ(≧▽≦*)o
               </>
             ) : (
-              "Mohon maaf kamu belum bisa lanjut ke tahap selanjutnya di Nihon no Matsuri 18. Terima kasih atas partisipasinya dan tetap semangat!"
+              "mohon maaf kamu belum bisa lanjut ke kepanitiaan Nihon no Matsuri 18. Terima kasih banyak atas antusiasme dan partisipasinya, tetap semangat ya!"
             )}
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function Result({ name, nim, status, onBack }: ResultProps) {
         <div className="flex flex-col items-center gap-3 w-full max-w-[90%] sm:max-w-sm">
           {isLulus && (
             <a
-              href="https://chat.whatsapp.com/CAJhKTeYbUH8lPJkfeS7cX?s=cl&p=a&mlu=4&ilr=4"
+              href="https://line.me/R/ti/g/qusLMJq3xE"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#FF5500] hover:bg-[#E04800] text-white px-5 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-[14px] font-extrabold shadow-md transition-transform hover:scale-105 uppercase tracking-wide text-center"
